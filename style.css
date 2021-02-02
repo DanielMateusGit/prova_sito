@@ -12,14 +12,18 @@
 
 
 html{
+    font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    font-size: 62.5%; 
+    font-size: 62.5%;
+    background-color: rgba(68,130,195,1);
 }
 
 
 header{
-    background-color: #4482c3;
-    height: 70vh;
+    background-image: linear-gradient(to bottom, rgba(68,130,195,0) ,rgba(68,130,195,0.7),  rgba(68,130,195,1)),
+                      url(./vendors/background.jpg);
+    background-size:cover;
+    height: 90vh;
 
     display:flex;
     flex-direction : column;
@@ -30,15 +34,81 @@ header{
 
 .menu_navigazione{
 
+    display:flex;
+    justify-content: space-between;
+
     align-self:center;
-    background-color:red;
-    height: 15vh;
-    width: 90%;
+    height: 8vh;
+    width: 80%;
 }
 
+
+.logo{
+    align-self:center;
+
+    font-weight:900;
+    color: white;
+    letter-spacing: 3px;
+    font-size: 1.3em;
+}
+
+
+.menu_icon{
+    align-self:center;
+    width:2em;
+    height: auto;
+}
+
+
 .testo_header{
+   
+
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+    justify-content: center;
+
     align-self: center;
-    background-color:green;
-    height: 55vh;
-    width: 90%;
+
+   
+    height: 100%;
+    width: 80%;
+}
+
+.hero-subtitle{
+    color:white;
+    font-size: 1.7em;
+}
+
+
+.hero-title{
+    color:white;
+    font-weight:700;
+    letter-spacing:0.4px;
+    line-height:1.1em;
+    font-size: 5em;
+}
+
+
+.pulsante-home{
+
+
+
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .17em;
+    font-size: 1.3em;
+
+    color: white;
+
+
+    height: 40px;
+    width: 150px;
+
+    background: none;
+    border: 1px solid white;
+
+    position:absolute;
+
+    margin-top: 70vh;
 }
